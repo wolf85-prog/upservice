@@ -51,7 +51,7 @@ async function start() {
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
-        app.listen(port, () => {
+        app.listen(port, 'localhost', () => {
             console.log(`Server has been started on ${port}`);
             console.log('MongoDB connected.')
         });
